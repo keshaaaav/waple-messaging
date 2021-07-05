@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542BBC4A2692F5B2001B1729 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BBC492692F5B2001B1729 /* extensions.swift */; };
 		5475678026924CE900DA3CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475677F26924CE900DA3CB7 /* AppDelegate.swift */; };
 		5475678226924CE900DA3CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475678126924CE900DA3CB7 /* SceneDelegate.swift */; };
-		5475678426924CE900DA3CB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475678326924CE900DA3CB7 /* ViewController.swift */; };
+		5475678426924CE900DA3CB7 /* conversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5475678326924CE900DA3CB7 /* conversationsViewController.swift */; };
 		5475678726924CE900DA3CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5475678526924CE900DA3CB7 /* Main.storyboard */; };
 		5475678926924CEB00DA3CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5475678826924CEB00DA3CB7 /* Assets.xcassets */; };
 		5475678C26924CEB00DA3CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5475678A26924CEB00DA3CB7 /* LaunchScreen.storyboard */; };
+		547567952692523300DA3CB7 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547567942692523300DA3CB7 /* loginViewController.swift */; };
+		547567972692535D00DA3CB7 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547567962692535D00DA3CB7 /* registerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		542BBC492692F5B2001B1729 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		5475677C26924CE900DA3CB7 /* Waple Messaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Waple Messaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5475677F26924CE900DA3CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5475678126924CE900DA3CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5475678326924CE900DA3CB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5475678326924CE900DA3CB7 /* conversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conversationsViewController.swift; sourceTree = "<group>"; };
 		5475678626924CE900DA3CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5475678826924CEB00DA3CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5475678B26924CEB00DA3CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5475678D26924CEB00DA3CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547567942692523300DA3CB7 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		547567962692535D00DA3CB7 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,32 @@
 			children = (
 				5475677F26924CE900DA3CB7 /* AppDelegate.swift */,
 				5475678126924CE900DA3CB7 /* SceneDelegate.swift */,
-				5475678326924CE900DA3CB7 /* ViewController.swift */,
+				542BBC492692F5B2001B1729 /* extensions.swift */,
 				5475678526924CE900DA3CB7 /* Main.storyboard */,
+				5475679326924F7B00DA3CB7 /* Controllers */,
 				5475678826924CEB00DA3CB7 /* Assets.xcassets */,
 				5475678A26924CEB00DA3CB7 /* LaunchScreen.storyboard */,
 				5475678D26924CEB00DA3CB7 /* Info.plist */,
 			);
 			path = "Waple Messaging";
+			sourceTree = "<group>";
+		};
+		5475679326924F7B00DA3CB7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				547567982692536300DA3CB7 /* Setup */,
+				5475678326924CE900DA3CB7 /* conversationsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		547567982692536300DA3CB7 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				547567942692523300DA3CB7 /* loginViewController.swift */,
+				547567962692535D00DA3CB7 /* registerViewController.swift */,
+			);
+			path = Setup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5475678426924CE900DA3CB7 /* ViewController.swift in Sources */,
+				547567952692523300DA3CB7 /* loginViewController.swift in Sources */,
+				5475678426924CE900DA3CB7 /* conversationsViewController.swift in Sources */,
 				5475678026924CE900DA3CB7 /* AppDelegate.swift in Sources */,
+				547567972692535D00DA3CB7 /* registerViewController.swift in Sources */,
 				5475678226924CE900DA3CB7 /* SceneDelegate.swift in Sources */,
+				542BBC4A2692F5B2001B1729 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WFU9HM86ZQ;
 				INFOPLIST_FILE = "Waple Messaging/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WFU9HM86ZQ;
 				INFOPLIST_FILE = "Waple Messaging/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
